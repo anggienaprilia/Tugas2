@@ -26,7 +26,7 @@ B) Tabel nilai_perbaikan dengan struktur tabel:
     <li>id_dosen INT NOT NULL</li>
 <br>
 
-![image](https://github.com/user-attachmunents/assets/b1239765-57ca-4501-b572-44749a04bb95)
+![image](https://github.com/user-attachments/assets/fe213bc1-3b8c-40db-92d5-363c3c0c0db7)
 <br><i> Relasi antara Tabel Mahasiswa dan Tabel Nilai Perbaikan </i>
 
 <p> 2. Membuat koneksi MYSQL dan PHP dalam bentuk OOP dengan penggunaan __construct <br>
@@ -39,16 +39,38 @@ B) Tabel nilai_perbaikan dengan struktur tabel:
   Berbeda untuk properti $conn yang berfungsi untuk menampung koneksi. Properti $conn dibuat publik agar koneksi dalam kelas Database dapat diakses diluar kelas Database.
 </p>
 <p>
-  Dari sini, prinsip Encapsulation atau menyembunyikan detail implementasi telah digunakan den
+  Dari sini, prinsip Encapsulation atau menyembunyikan detail implementasi telah digunakan dengan penggunaan tingkat akses yaitu Private dan Public.
 </p>
 
-![image](https://github.com/user-attachments/assets/08aa1e80-7278-4390-80e9-16509a0e20e0)
-<br>
 
-![image](https://github.com/user-attachments/assets/dee87669-158e-496d-bac6-82951d68c663)
+
+<p> 3. Membuat kelas turunan dengan konsep Inheritance <br>
+
+![image](https://github.com/user-attachments/assets/39ac55af-8e64-49d2-a942-5dbe9542c941)
 <p>
-  Penambahan function dilakukan dalam kelas Database, seperti function tampilMahasiswa() yang dipergunakan untuk mengambil atau menampilkan data mahasiswa dari tabel 'mahasiswa' dalam Database Perkuliahan. Adapula function tampilNilaiPerbaikan() yang dipergunakan untuk mengambil atau menampilkan data nilai perbaikan yang ada dalam tabel 'nilai_perbaikan'. Kedua function menggunakan perintah "SELECT * FROM tabel_name" yang memang berfungsi untuk mengambil data dari tabel tertentu dan kondisi tertentu.
+    Sebelum membuat kelas turunan dari kelas Database, perlu dijalankan lebih dahulu perintah atau fungsi yang dapat mengimpor atau menyisipkan file berisi kelas Database. Perintah atau fungsi tersebut adalah Include. 
 </p>
+<p>
+    Untuk membuat kelas turunan dari kelas Database, digunakan kata kunci extends. Extends sendiri memang digunakan untuk memperoleh kelas dari kelas lain, dan ini disebut pewarisan (Inheritance).
+</p>
+<p>
+    Pembuatan constructor dan 'parent::__constructor' dalam kelas turunan perlu dibuat karena digunakan untuk memanggil constructor dari kelas induknya (Database).
+</p>
+
+![image](https://github.com/user-attachments/assets/55f9ec2e-d5d3-4a7f-917d-b01365c59964)
+<br><i> Function dalam kelas Turunan untuk menampilkan data 'Perbaikan nilai tugas' dalam tabel nilai_perbaikan </i>
+
+![image](https://github.com/user-attachments/assets/cc68dc23-4e43-486d-a845-9deb65bfd142)
+<br><i> Function dalam kelas Turunan untuk menampilkan data 'Perbaikan nilai presentasi' dalam tabel nilai_perbaikan </i>
+
+![image](https://github.com/user-attachments/assets/e68fd016-d116-4848-82f1-4b1f8822b4c9)
+<br><i> Function dalam kelas Turunan untuk menampilkan data 'Perbaikan nilai ujian akhir' dalam tabel nilai_perbaikan </i>
+
+
+
+    
+
+
 
 
 
